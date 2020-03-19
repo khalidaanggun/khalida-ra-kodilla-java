@@ -1,4 +1,4 @@
-package testing.collection;
+package com.kodilla.testing.collection;
 
 import java.util.ArrayList;
 

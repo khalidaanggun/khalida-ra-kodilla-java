@@ -1,7 +1,7 @@
-package testing.forum;
+package com.kodilla.testing.forum;
 
 import org.junit.*;
-import testing.user.SimpleUser;
+import com.kodilla.testing.user.SimpleUser;
 
 //import org.junit.Assert;
 //import org.junit.Test;
@@ -29,7 +29,7 @@ public class ForumTestSuite {
         //When
         String result = simpleUser.getUserName();
         //then
-        Assert.assertEquals("theForunmUser",result);
+        Assert.assertEquals("theForumUser",result);
     }
 
 
