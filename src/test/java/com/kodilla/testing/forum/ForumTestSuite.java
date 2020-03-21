@@ -1,7 +1,7 @@
 package com.kodilla.testing.forum;
 
 import org.junit.*;
-import com.kodilla.testing.user.SimpleUser;
+import com.kodilla.user.SimpleUser;
 
 //import org.junit.Assert;
 //import org.junit.Test;
