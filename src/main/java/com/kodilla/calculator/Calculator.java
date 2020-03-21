@@ -1,4 +1,4 @@
-package com.kodilla.testing.calculator;
+package com.kodilla.calculator;
 
 public class Calculator {
     public int a;
