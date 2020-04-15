@@ -1,4 +1,4 @@
-package com.kodilla.user;
+package com.kodilla.testing.user;
 
 public class SimpleUser {
     String userName;
