@@ -22,7 +22,7 @@ public class StatisticTestSuite {
         when(stMock.postCount()).thenReturn(0);
         when(stMock.commentCount()).thenReturn(100);
         //when
-        int quantityOfPost= stMock.postCount();
+        int quantityOfPost= calculateAdvStatistics.numberOfPost;
         //then
         Assert.assertEquals(0, quantityOfPost);
         calculateAdvStatistics.showStatistic();
@@ -40,7 +40,7 @@ public class StatisticTestSuite {
 
         calculateAdvStatistics.calculator(stMock);
         //when
-        int quantityOfPost= stMock.postCount();
+        int quantityOfPost= calculateAdvStatistics.numberOfPost;
         //then
         Assert.assertEquals(1000, quantityOfPost );
         calculateAdvStatistics.showStatistic();
@@ -58,7 +58,7 @@ public class StatisticTestSuite {
 
         calculateAdvStatistics.calculator(stMock);
         //when
-        int quantityOfComments= stMock.commentCount();
+        int quantityOfComments= calculateAdvStatistics.numberOfComments;
         //then
         Assert.assertTrue("quantity of comment is not 0", quantityOfComments==0);
         calculateAdvStatistics.showStatistic();
@@ -76,8 +76,8 @@ public class StatisticTestSuite {
 
         calculateAdvStatistics.calculator(stMock);
         //when
-        int quantityOfComments= stMock.commentCount();
-        int quantityOfPost= stMock.postCount();
+        int quantityOfComments= calculateAdvStatistics.numberOfComments;
+        int quantityOfPost= calculateAdvStatistics.numberOfPost;
         //then
         Assert.assertTrue("comments is not Less Than Post", quantityOfComments <quantityOfPost );
         calculateAdvStatistics.showStatistic();
@@ -95,8 +95,8 @@ public class StatisticTestSuite {
 
         calculateAdvStatistics.calculator(stMock);
         //when
-        int quantityOfComments= stMock.commentCount();
-        int quantityOfPost= stMock.postCount();
+        int quantityOfComments= calculateAdvStatistics.numberOfComments;
+        int quantityOfPost= calculateAdvStatistics.numberOfPost;
         //then
         Assert.assertTrue("comments is not Greater Than Post", quantityOfComments >quantityOfPost );
         calculateAdvStatistics.showStatistic();
@@ -111,7 +111,7 @@ public class StatisticTestSuite {
         when(stMock.postCount()).thenReturn(100);
         when(stMock.commentCount()).thenReturn(100);
          //when
-        int quantityOfUser= stMock.userNames().size();
+        int quantityOfUser= calculateAdvStatistics.numberOfUser;
         //then
         Assert.assertEquals(0, quantityOfUser );
         calculateAdvStatistics.showStatistic();
@@ -131,7 +131,7 @@ public class StatisticTestSuite {
 
         calculateAdvStatistics.calculator(stMock);
         //when
-        int quantityOfUser= stMock.userNames().size();
+        int quantityOfUser= calculateAdvStatistics.numberOfUser;
         //then
         Assert.assertEquals(100, quantityOfUser );
         calculateAdvStatistics.showStatistic();
